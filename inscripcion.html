@@ -38,10 +38,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto">      
             <li class="nav-item">
               <a class="nav-link" href="index.html" >Inicio</a>
-            </li>             
+            </li>       
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Información
@@ -67,57 +67,51 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> 
+
     <!-- Page Content -->
     <div class="container">
-
       <br><br>
-      <h1 class="mt-4 mb-3">Programa</h1>
-      <!-- Image Header -->
-      <img class="img-fluid rounded mb-4" src="media/img/img3.png" alt="" style=" background-size: contain; ">
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">Inscripción</h1>
+      <p>Seleccione y llene uno de los formularios que se encuentran abajo dependiendo el caso, sea Expositor o Participante.</p>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#participante">Participante</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#expositor">Expositor</a>
+        </li>
+      </ul><br>
+      <img class="img-fluid rounded mb-4" src="media/img/img3.png" alt="" style=" background-size: contain; ">            
+      <div class="alert alert-dismissible alert-danger">  
+        <p align="justify">Si no logra visualizar correctamente el formulario, inscribase en el siguiente documento:
+        <a href="https://docs.google.com/spreadsheets/d/1OC6XUPxrlK2_pqnojBRPftK1yw5l_WfAdrz5QyhXEKQ/edit?usp=sharing" target="_top">Inscripción</a></p>
+      </div>  
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#participante">Participante</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#expositor">Expositor</a>
+        </li>
+      </ul>
+      <br>
+      <div id="myTabContent" class="tab-content">
+          <div class="tab-pane fade active show" id="participante">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScL9qypKq0tIn3Y1NhWxcoZZYfD6ukE7UbHjURkxenPXcowSA/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Cargando...</iframe> 
+          </div>
+          <div class="tab-pane fade" id="expositor">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSce5YgKwp8wLvU1dqElkGXReMft3yyOE2JnP-JyNWjO2f2D6g/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Cargando...</iframe> 
+          </div>
+      </div> 
+    </div>
+    </div>
+
+    </div>
     <!-- /.container -->
-   <div class="container">
-     <p>El Seminario tendrá una duración de tres días enteros y un medio día. Los primeros son los días martes 10 al jueves 12 de abril de 2018 y el mediodía del viernes 13 de abril de 2018.</p>     
-     <p>Cada día será dedicado a un tema general de acuerdo al siguiente orden y jornadas: (sujeto a cambios)</p>
-     <h2>Jornadas:</h2>
-     <h4><small>Matutina: de 8:30 a.m. a 12 m.</small></h4>
-     <h4><small>Vespertina: de 1:30 p.m. a 5:30 p.m.</small></h4><br>     
-     <table class="table table-hover table-primary">
-        <thead>
-          <tr>
-            <th scope="col">Día</th>            
-            <th scope="col">Tema</th>
-            <th scope="col">Ponente</th> 
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Martes 10</td>
-            <td>Teorías de la frontera y nuevas ciudadanías.</td>
-            <td><a href="expositores.html" target="_top">Joaquín Eguren Rodríguez</a></td>
-          </tr>
-           <tr>
-            <td>Miércoles 11</td>
-            <td>Xenofobia, nacionalismos y migraciones.</td>
-            <td><a href="expositores.html#jessica" target="_top">Jessica Retis</a></td>
-          </tr>
-          <tr>
-            <td>Jueves 12</td>
-            <td>Desplazamientos humanos forzados.</td>
-            <td><a href="expositores.html#noah" target="_top">Noah Bullock</a></td>
-          <tr>
-            <td>Viernes 13</td>
-            <td>Migración y Desarrollo.</td>
-            <td><a href="expositores.html#ursula" target="_top">Ursula Roldán Andrade</a></td>
-          </tr>
-        </tbody>
-      </table>
 
-   </div>
-  </div>
-
-
-  <footer class="py-4 bg-dark">
+   <footer class="py-4 bg-dark">
       <div class="container">
         <p class="m-0 text-center text-white">Seminario Regional de Migraciones.</p>
         <p class="m-0 text-center text-white">Del 10 al 13 de Abril, UCA EL Salvador</p>

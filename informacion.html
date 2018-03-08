@@ -16,6 +16,15 @@
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114894241-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-114894241-1');
+    </script>
   </head>
 
   <body>
@@ -23,12 +32,16 @@
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="media/img/LogoSeminario_flechas.png" width="250" height="80" alt=""></a>
+        <a class="collapse navbar-collapse" href="index.html"><img src="media/img/LogoSeminario_flechas.png" width="350" alt=""></a>
+        <a class="navbar-toggler" href="index.html"><img src="media/img/LogoSeminario_flechas.png" width="225" alt=""></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">            
+          <ul class="navbar-nav ml-auto">   
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" >Inicio</a>
+            </li>          
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Información
@@ -36,31 +49,18 @@
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
                 <a class="dropdown-item" href="Objetivos.html">Objetivos y carácter</a>
                 <a class="dropdown-item" href="ejes.html">Ejes y/o temáticas</a>
-                <a class="dropdown-item" href="programacion.html">Programación</a> 
-                <a class="dropdown-item disabled" href="ponentes.html">Expositores</a>   
+                <a class="dropdown-item" href="programacion.html">Programa</a> 
+                <a class="dropdown-item " href="expositores.html">Ponentes centrales</a>   
                 <a class="dropdown-item" href="informacion.html">Información general</a>
                 <a class="dropdown-item" href="faq.html">Preguntas frecuentes</a>           
               </div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Inscríbete
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="participante.html">Participante</a>
-                <a class="dropdown-item" href="ponente.html">Expositor</a>                
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="inscripcion.html" >Inscripción</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Galería
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="index.html">Fotos</a>
-                <a class="dropdown-item" href="index.html">Vídeos</a>
-                <a class="dropdown-item" href="index.html">Documentos</a>
-              </div>
-            </li>  
+            <li class="nav-item">
+              <a class="nav-link " href="galeria.html" >Galería</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="contacto.html">Contáctanos</a>
             </li>
@@ -72,12 +72,10 @@
     <div class="container">
 
       <br><br>
-      <h1 class="mt-4 mb-3">Información
-        <small>General</small>
-      </h1>
+      <h1 class="mt-4 mb-3">Información General </h1>
       <!-- Image Header -->
-      <img class="img-fluid rounded mb-4" src="media/img/img2.jpg" alt="">
-      <h2 class="blockquote text-center">Para la comodidad durante el desarrollo del Seminario Regional de Migraciones y un servicio de estadía satisfactorio, UCA El Salvador hace una recomendación particular de hospedaje en el Hotel Siesta, debido a la cercanía, fácil acceso tanto en vehículo como a pie a las instalaciones de la Universidad, por su buen servicio y precios accesibles.</h2><br>
+      <img class="img-fluid rounded mb-4" src="media/img/img2.jpg" alt="" style=" background-size: contain; ">
+      <!--<h2 class="blockquote text-center">Para la comodidad durante el desarrollo del Seminario Regional de Migraciones y un servicio de estadía satisfactorio, UCA El Salvador hace una recomendación particular de hospedaje en el Hotel Siesta, debido a la cercanía, fácil acceso tanto en vehículo como a pie a las instalaciones de la Universidad, por su buen servicio y precios accesibles.</h2>--><br>
    <div class="container">
     <ul class="nav nav-tabs">  
   <li class="nav-item dropdown">
@@ -100,9 +98,9 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Turismo</a>
     <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 39px, 0px); top: 0px; left: 0px; will-change: transform;">
-      <a class="dropdown-item" data-toggle="tab" href="#trip1">Opción de tuor #1</a>
-      <a class="dropdown-item" data-toggle="tab" href="#trip2">Opción de tuor #2</a>
-      <a class="dropdown-item" data-toggle="tab" href="#trip3">Opción de tuor #3</a>
+      <a class="dropdown-item" data-toggle="tab" href="#trip1">Opción de tour #1</a>
+      <a class="dropdown-item" data-toggle="tab" href="#trip2">Opción de tour #2</a>
+      <a class="dropdown-item" data-toggle="tab" href="#trip3">Opción de tour #3</a>
     </div>
   </li>  
   <li class="nav-item">
@@ -120,11 +118,11 @@
           <h2>Hotel 4 estrellas</h2>
           <h2><small>Final Bulevar Los Próceres, Antiguo Cuscatlán, La Libertad, El Salvador. </small></h2>
           <h3><small>Ubicado a 200 mts. de la Basílica de Guadalupe</small></h3>
-          <p>Posicionado dentro de los mejores hoteles de la ciudad, con más de 40 años de experiencia brindando calidad, servicio y tradición en un ambiente acogedor con el que se recibe a todos nuestros huéspedes, en donde disfrutara de comodidad, seguridad y la calidez de nuestro personal. </p>
+          <p align="justify">Posicionado dentro de los mejores hoteles de la ciudad, con más de 40 años de experiencia brindando calidad, servicio y tradición en un ambiente acogedor con el que se recibe a todos nuestros huéspedes, en donde disfrutara de comodidad, seguridad y la calidez de nuestro personal. </p>
         </div>
     </div>
     <div class="container">
-      <p>Por negocio o por placer nuestro hotel se encuentra estratégicamente ubicado en la ciudad, cerca de los mejores centros de negocios, comerciales y de entretenimiento más modernos y seguros de Centro América como Multiplaza, La Gran Vía, Zona Rosa, Centro Internacional de Ferias y Convenciones, el Museo de Antropología David J. Guzmán, el Museo de Arte Marte, Teatro Presidente, a pocos pasos de la Universidad Centroamericana José Simeón Cañas y del Estadio Cuscatlán. Ubicado a solo 40 minutos del Aeropuerto Internacional Monseñor Óscar Arnulfo Romero.</p>
+      <p align="justify" align="justify">Por negocio o por placer nuestro hotel se encuentra estratégicamente ubicado en la ciudad, cerca de los mejores centros de negocios, comerciales y de entretenimiento más modernos y seguros de Centro América como Multiplaza, La Gran Vía, Zona Rosa, Centro Internacional de Ferias y Convenciones, el Museo de Antropología David J. Guzmán, el Museo de Arte Marte, Teatro Presidente, a pocos pasos de la Universidad Centroamericana José Simeón Cañas y del Estadio Cuscatlán. Ubicado a solo 40 minutos del Aeropuerto Internacional Monseñor Óscar Arnulfo Romero.</p>
       <hr>
       <table class="table table-hover table-primary">
         <thead>
@@ -138,21 +136,21 @@
         </thead>
         <tbody>
           <tr>
-            <td>Habitación sencilla(1 cama)</td>
+            <td>Habitación sencilla (1 cama)</td>
             <td>$55.00</td>
             <td>1 o 2</td>
             <td>$9.90</td>
             <td>$64.90</td>
           </tr>
            <tr>
-            <td>Habitación doble(2 camas)</td>
+            <td>Habitación doble (2 camas)</td>
             <td>$60.00</td>
             <td>3 o 4</td>
             <td>$10.80</td>
             <td>$70.80</td>
           </tr>
            <tr>
-            <td>Habitación triple(3 camas)</td>
+            <td>Habitación triple (3 camas)</td>
             <td>$65.00</td>
             <td>4 o 5</td>
             <td>$11.70</td>
@@ -175,7 +173,7 @@
       <div class="row">        
         <div class="col-lg-6">
           <h3><small>Reservación</small></h3>
-          <p>Serán necesarios los datos exactos del check in y check out  o día entrada y salida del hotel, nombre del huésped, tipo de habitación requerida y un número de tarjeta de crédito con fecha de vencimiento. En caso de cualquier otra consulta o especificación, así como para solicitar reservación puede comunicarse con Carlos Escobar, gerente de ventas del hotel, por los medios:
+          <p align="justify">Serán necesarios los datos exactos del check in y check out  o día entrada y salida del hotel, nombre del huésped, tipo de habitación requerida y un número de tarjeta de crédito con fecha de vencimiento. En caso de cualquier otra consulta o especificación, así como para solicitar reservación puede comunicarse con Carlos Escobar, gerente de ventas del hotel, por los medios:
           <ul>
             <li>correo: <a href="mailto:ventas@hotelsiesta.com.com?Subject=Consulta asistente Seminario al seminario de migracion" target="_top">ventas@hotelsiesta.com.sv</a></li>
             <li>teléfonos (+503) 2219 0022 / 2219 0088</li>
@@ -188,7 +186,7 @@
           <hr>
           <div class="container">
             <h3><small>¿Cómo llegar?</small></h3>
-            <p>Tiempo estimado caminando: 10 minutos</p>
+            <p align="justify">Tiempo estimado caminando: 10 minutos</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3876.6226007264577!2d-89.24171658522157!3d13.680697540393513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x8f6331cd58c053db%3A0x1f205dea5156d068!2sUCA%2C+Santa+Tecla%2C+El+Salvador!3m2!1d13.680414299999999!2d-89.2371295!4m5!1s0x8f63302ce1d9d877%3A0x527c4fbd9047b183!2sSiesta+Hotel+and+Casino..%2C+Final+Boulevard+Los+Proceres%2C+San+Salvador!3m2!1d13.682756999999999!2d-89.2401728!5e0!3m2!1ses-419!2ssv!4v1519053832896" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
       </div>
@@ -204,7 +202,7 @@
         <div class="col-lg-6">
           <h2>Hotel 5 estrellas</h2>
           <h2><small>Avenida La Revolución, Colonia San Benito, San Salvador, El Salvador.</small></h2>          
-          <p>El Hotel Sheraton Presidente San Salvador está situado a 15 minutos en coche del centro de la ciudad y ofrece un pequeño spa, una piscina al aire libre y vistas impresionantes a las montañas de las afueras de San Salvador. Todas sus habitaciones disponen de aire acondicionado, conexión Wi-Fi gratuita, TV por cable y cafetera. </p>
+          <p align="justify">El Hotel Sheraton Presidente San Salvador está situado a 15 minutos en coche del centro de la ciudad y ofrece un pequeño spa, una piscina al aire libre y vistas impresionantes a las montañas de las afueras de San Salvador. Todas sus habitaciones disponen de aire acondicionado, conexión Wi-Fi gratuita, TV por cable y cafetera. </p>
         </div>
     </div>
     <div class="container">
@@ -259,7 +257,7 @@
       <div class="row">        
         <div class="col-lg-6">
           <h3><small>Reservación</small></h3>
-          <p>Comunicarse con Elizabeth Castro, por los medios:
+          <p align="justify">Comunicarse con Elizabeth Castro, por los medios:
           <ul>
             <li>correo: <a href="mailto:elizabeth.castro@sheratonpresidente.com.sv?Subject=Consulta asistente Seminario al seminario de migracion" target="_top">elizabeth.castro@sheratonpresidente.com.sv </a></li>
             <li>teléfonos (+503) 2283 4000 / 7083 2117 (directo y whatsapp)</li>
@@ -300,7 +298,7 @@
               </tr>
             </table>
             
-            <p>Tiempo estimado en vehiculo: 20 minutos</p>
+            <p align="justify">Tiempo estimado en vehiculo: 20 minutos</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d15505.957161750244!2d-89.25071017289132!3d13.688789546210925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x8f6331cd58c053db%3A0x1f205dea5156d068!2sUCA%2C+Santa+Tecla%2C+El+Salvador!3m2!1d13.680414299999999!2d-89.2371295!4m5!1s0x8f63302f3458a3d1%3A0x7d58cee957bb821f!2sHotel+Sheraton+Presidente%2C+Avenida+De+La+Revolucion%2C+San+Salvador!3m2!1d13.691379999999999!2d-89.24175579999999!5e0!3m2!1ses-419!2ssv!4v1519057999101" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
       </div>
@@ -316,7 +314,7 @@
         </div>
         <div class="col-lg-6">
           <h2><small>Avenida Antiguo Cuscatlán, Calle AC 11. Colonia La Sultana, Antiguo Cuscatlán, El Salvador.</small></h2>
-          <p>Este elegante hotel, con techo verde y paneles solares, se encuentra a 5 minutos a pie de una parada de autobús, a 2 km de la colección de arte nacional en el Museo de Arte de El Salvador, y a 4 km de la emblemática plaza Divino Salvador del Mundo.
+          <p align="justify">Este elegante hotel, con techo verde y paneles solares, se encuentra a 5 minutos a pie de una parada de autobús, a 2 km de la colección de arte nacional en el Museo de Arte de El Salvador, y a 4 km de la emblemática plaza Divino Salvador del Mundo.
 
           Las coloridas habitaciones, decoradas de forma personalizada, cuentan con Wi-Fi gratis, televisión de pantalla plana y baños (privados) con ducha de energía solar. Las habitaciones superiores ofrecen salas de estar.</p>
         </div>
@@ -374,7 +372,7 @@
       <hr>     
       <div class="row">                
           <h3><small>Reservación</small></h3>
-          <p>Al confirmar la reservación en línea, el huésped autoriza al hotel a cobrar el importe de la reserva correspondiente de la reserva de su tarjeta de crédito. De presentarte inconvenientes con la transacción, tendrá que registrar otra tarjeta para obtener una confirmación.Tomar en cuenta que la hora del check in es a las 3:00 p.m y de check out a las 12 m.d. Si el huésped desaloja luego de esa hora, se cobrará un monto extra por late check out, sin embargo, el hotel ofrece guardar equipaje en un lugar seguro hasta su hora de partida. Para mas informacion o reservar comunicarse con Vilma Cortez por los medios:
+          <p align="justify">Al confirmar la reservación en línea, el huésped autoriza al hotel a cobrar el importe de la reserva correspondiente de la reserva de su tarjeta de crédito. De presentarte inconvenientes con la transacción, tendrá que registrar otra tarjeta para obtener una confirmación.Tomar en cuenta que la hora del check in es a las 3:00 p.m y de check out a las 12 m.d. Si el huésped desaloja luego de esa hora, se cobrará un monto extra por late check out, sin embargo, el hotel ofrece guardar equipaje en un lugar seguro hasta su hora de partida. Para mas informacion o reservar comunicarse con Vilma Cortez por los medios:
           <ul>
             <li>correo: <a href="hotel@arboldefuego.com?Subject=Consulta asistente Seminario al seminario de migracion" target="_top">hotel@arboldefuego.com</a></li>reservaciones@hoteleselsalvador.com</a></li>
             <li>facebook: <a href="https://www.facebook.com/pg/hotelarboldefuego/about/?ref=page_internal" target="_top">Hotel Arbol de fuego</a></li>
@@ -384,7 +382,7 @@
           <div class="container">
             <hr>     
             <h3><small>¿Cómo llegar?</small></h3>
-            <p>Tiempo estimado caminando: 10 minutos</p>
+            <p align="justify">Tiempo estimado caminando: 10 minutos</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2321.7776598751816!2d-89.23992951107631!3d13.678596989865468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x8f6331cd58c053db%3A0x1f205dea5156d068!2sUCA%2C+Santa+Tecla%2C+El+Salvador!3m2!1d13.680414299999999!2d-89.2371295!4m5!1s0x8f6331d11ec78b51%3A0xa93c2ab8da4ae4fd!2sArbol+de+Fuego+Eco-Hotel%2C+11C%2C+Avenida+Antiguo+Cuscatlan%2C+San+Salvador+0!3m2!1d13.676756999999998!2d-89.240436!5e0!3m2!1ses-419!2ssv!4v1519162801463" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
       </div>
@@ -400,8 +398,8 @@
         <div class="col-lg-6">
           <h2>Hotel 2 estrellas</h2>
           <h2><small> Colonia La Sultana, Calle Las Rosas y Avenida Los Laureles #1 San Salvador, El Salvador. </small></h2>    
-          <p>Este hotel sin pretensiones está en un área residencial a las afueras de la ciudad. Las habitaciones, modestas y compactas, cuentan con televisor y Wi-Fi gratis.</p>
-          <p>El hotel sirve el desayuno por un suplemento en un restaurante tranquilo con un ambiente rústico. También hay una acogedora sala de estar, un patio y una piscina exterior. Se incluye aparcamiento en las instalaciones.</p>
+          <p align="justify">Este hotel sin pretensiones está en un área residencial a las afueras de la ciudad. Las habitaciones, modestas y compactas, cuentan con televisor y Wi-Fi gratis.</p>
+          <p align="justify">El hotel sirve el desayuno por un suplemento en un restaurante tranquilo con un ambiente rústico. También hay una acogedora sala de estar, un patio y una piscina exterior. Se incluye aparcamiento en las instalaciones.</p>
         </div>
     </div>
     <div class="container">
@@ -452,7 +450,7 @@
       </ul>        
       <hr>     
           <h3><small>Reservación</small></h3>          
-          <p>Comunicarse con el hotel por los medios:
+          <p align="justify">Comunicarse con el hotel por los medios:
           <ul>
             <li>correo: <a href="mailto:alicante_internacional@hotmail.com?Subject=Consulta asistente Seminario al seminario de migracion" target="_top">alicante_internacional@hotmail.com</a></li>
             <li>facebook: <a href="https://www.facebook.com/hotelalicantesansalvador/?fref=ts" target="_top">Hotel Alicante San Salvador</a></li>
@@ -462,7 +460,7 @@
           <div class="container">
             <hr>     
             <h3><small>¿Cómo llegar?</small></h3>
-            <p>Tiempo estimado caminando: 20 minutos</p>
+            <p align="justify">Tiempo estimado caminando: 20 minutos</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d3876.64842269267!2d-89.24143373522159!3d13.679129590394501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e2!4m3!3m2!1d13.681833099999999!2d-89.23749459999999!4m5!1s0x8f6331d3f1aed6ef%3A0x54d0e2b10b63c540!2sHotel+Alicante+San+Salvador+Hotel%2C+Avenida+Los+Laureles%2C+San+Salvador!3m2!1d13.676420199999999!2d-89.2414113!5e0!3m2!1ses-419!2ssv!4v1519062234620" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>      
     </div>    
@@ -477,7 +475,7 @@
         <div class="col-lg-6">
           <h2><small> Bulevar del Hipódromo, Colonia San Benito #346, San Salvador, El Salvador. </small></h2>    
           <h3><small>Frente a Estación Tica Bus, en La Zona Rosa</small></h3>
-          <p>a Zona Hostel tiene una excelente ubicación central, ni siquiera a 1 minuto a pie de una de las zonas turísticas más importantes de la ciudad: La Zona Rosa. Aquí puede encontrar cafeterías, restaurantes, comida rápida, discotecas y pubs, museos, centros comerciales, etc. También es una zona muy segura y tranquila, lo que garantiza que su estancia sea cómoda y agradable. Las estaciones de autobuses internacionales están por todas partes, tenemos una justo enfrente de nosotros y otra en nuestro mismo bloque.</p>
+          <p align="justify">a Zona Hostel tiene una excelente ubicación central, ni siquiera a 1 minuto a pie de una de las zonas turísticas más importantes de la ciudad: La Zona Rosa. Aquí puede encontrar cafeterías, restaurantes, comida rápida, discotecas y pubs, museos, centros comerciales, etc. También es una zona muy segura y tranquila, lo que garantiza que su estancia sea cómoda y agradable. Las estaciones de autobuses internacionales están por todas partes, tenemos una justo enfrente de nosotros y otra en nuestro mismo bloque.</p>
         </div>
     </div>
     <div class="container">
@@ -550,7 +548,7 @@
     </div>
       <hr>     
           <h3><small>Reservación</small></h3>          
-          <p>El pago de su reservación puede hacerlo a través de un depósito a nuestra cuenta bancaria, por medio de tarjeta de crédito o débito, Paypal, o en nuestras instalaciones. En tarjeta de crédito o débito el cargo adicional es del 6.4% por uso de POS. Comunicarse con Jennifer Cárcamo por los medios:
+          <p align="justify">El pago de su reservación puede hacerlo a través de un depósito a nuestra cuenta bancaria, por medio de tarjeta de crédito o débito, Paypal, o en nuestras instalaciones. En tarjeta de crédito o débito el cargo adicional es del 6.4% por uso de POS. Comunicarse con Jennifer Cárcamo por los medios:
           <ul>
             <li>correo: <a href="mailto:lazonahostel@gmail.com?Subject=Consulta asistente Seminario al seminario de migracion" target="_top">lazonahostel@gmail.com</a></li>
             <li>facebook: <a href="https://www.facebook.com/lazonahostel/?fref=ts" target="_top">La Zona Hostel, El Salvador</a></li>
@@ -560,7 +558,7 @@
           <div class="container">
             <hr>     
             <h3><small>¿Cómo llegar?</small></h3>
-            <p>Tiempo estimado en vehiculo: 7 minutos</p>
+            <p align="justify">Tiempo estimado en vehiculo: 7 minutos</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7753.106736927872!2d-89.24415467577556!3d13.68490056156301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d13.681833099999999!2d-89.23749459999999!4m5!1s0x8f6330291c841129%3A0x453c02a8a559efda!2sLa+Zona+Hostel%2C+Bulevar+Del+Hipodromo+436%2C+San+Salvador!3m2!1d13.6890699!2d-89.2417067!5e0!3m2!1ses-419!2ssv!4v1519073386394" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>      
     </div>    
@@ -569,7 +567,7 @@
 <div class="tab-pane fade" id="bus1">
   <div class="container">
     <h1 class="mt-4 mb-3">Acacya de RL</h1>
-    <p>Servicio de taxis,transporte oficial en el Aeropuerto Internacional El Salvador y los Hoteles: Real Intercontinental, Hilton Princess El Salvador, Holiday Inn, Beberly Hills, Courtyard Marriot, Hotel Quality Aeropuerto. Nuestros 35 años de experiencia nos respaldan por eso somos Líderes en el Transporte Selectivo.</p>
+    <p align="justify">Servicio de taxis,transporte oficial en el Aeropuerto Internacional El Salvador y los Hoteles: Real Intercontinental, Hilton Princess El Salvador, Holiday Inn, Beberly Hills, Courtyard Marriot, Hotel Quality Aeropuerto. Nuestros 35 años de experiencia nos respaldan por eso somos Líderes en el Transporte Selectivo.</p>
     <hr>
     <table class="table table-hover table-primary">
         <thead>
@@ -599,7 +597,7 @@
       </table>
       <hr>         
           <h3><small>Reservación</small></h3>          
-          <p>El cliente puede realizar los pagos en efectivo al finalizar cada traslado o puede cancelar los servicios con tarjeta. Los servicios cancelados con tarjeta tienen un recargo del 6%.Comunicarse con Karen Amaya por los medios:
+          <p align="justify">El cliente puede realizar los pagos en efectivo al finalizar cada traslado o puede cancelar los servicios con tarjeta. Los servicios cancelados con tarjeta tienen un recargo del 6%.Comunicarse con Karen Amaya por los medios:
           <ul>
             <li>correo: <a href="mailto:reservacionesweb@taxisacacya.com?Subject=Consulta asistente Seminario al seminario de migracion" target="_top">reservacionesweb@taxisacacya.com</a></li>
             <li>teléfono: (+503) 2521 1001</li>            
@@ -610,7 +608,7 @@
 <div class="tab-pane fade" id="bus2">
   <div class="container">
     <h1 class="mt-4 mb-3">Transportes “Del SOL”</h1>
-    <p>"Somos una empresa de transporte terrestre internacional, ofrecemos salidas diarias entre los países de Guatemala, El Salvador, Costa Rica y Nicaragua; en las que brindamos nuestros servicio ejecutivo a nuestros clientes, con el fin de que reciban la mejor atención. Contamos con personal altamente calificado y profesional, nos esforzamos para generar una buena Rentabilidad a la organización, garantizando así; la satisfacción de nuestros clientes."</p>
+    <p align="justify">"Somos una empresa de transporte terrestre internacional, ofrecemos salidas diarias entre los países de Guatemala, El Salvador, Costa Rica y Nicaragua; en las que brindamos nuestros servicio ejecutivo a nuestros clientes, con el fin de que reciban la mejor atención. Contamos con personal altamente calificado y profesional, nos esforzamos para generar una buena Rentabilidad a la organización, garantizando así; la satisfacción de nuestros clientes."</p>
     <hr>
     <table class="table table-hover table-primary">
         <thead>
@@ -660,7 +658,7 @@
       </ul>
       <hr>         
           <h3><small>Contratacion del servicio</small></h3>          
-          <p> Para hacer efectiva la compra o reservación de los boletos es indispensable tener a la mano documentos vigentes. Las condiciones y formas de pago están sujetas a negociación.Comunicarse con Luis Márquez, Agente Corporativo, por los medios:
+          <p align="justify"> Para hacer efectiva la compra o reservación de los boletos es indispensable tener a la mano documentos vigentes. Las condiciones y formas de pago están sujetas a negociación.Comunicarse con Luis Márquez, Agente Corporativo, por los medios:
           <ul>
             <li>correo: <a href="mailto:luis.marquezdelsol@gmail.com?Subject=Consulta asistente Seminario al seminario de migracion" target="_top">luis.marquezdelsol@gmail.com</a></li>
             <li>correo: <a href="mailto:delsolcorporativo@gmail.com?Subject=Consulta asistente Seminario al seminario de migracion" target="_top">delsolcorporativo@gmail.com</a></li>
@@ -673,26 +671,26 @@
   <div class="container">
     <h1 class="mt-4 mb-3">Opción de TOUR #1:</h1>  
     <h3><small><ul>
-      <li>Planes de rendero</li>
+      <li>Planes de renderos</li>
       <li>Puerta del diablo</li>
       <li>Centro Histórico(Catedral e Iglesia El Rosario)</li>
     </ul></small></h3>
-    <h3><small><strong>Costro por persona:</strong> $35.00</small></h3>
+    <h3><small><strong>Costo por persona:</strong> $35.00</small></h3>
     <br>
       <div class="row">
         <div class="col-lg-4">
           <img class="img-fluid rounded mb-4" src="media/img/puertadeldiablo.jpg" alt="">
         </div>
         <div class="col-lg-8">
-         <p><strong>SÍNTESIS: </strong>Visitaremos uno de los lugares turísticos más cercanos y hermosos en San Salvador, por su historia y tradición: La Puerta del Diablo y Mil Cumbres en Planes de Renderos, donde tomaremos un delicioso almuerzo y podremos tener vistas panorámicas hacia el mar, la capital y el lago más grande del país: Ilopango, muy conocido por ser el cráter de un antiguo volcán cuya antigua mega­erupción marcó la historia de nuestros antepasados. Luego, nos  dirigiremos a conocer el centro Histórico de la capital, donde se vivieron  acontecimientos políticos muy importantes en nuestra historia y que incluye la Catedral Metropolitana que acoge los restos del Arzobispo Óscar Arnulfo Romero y  la Iglesia El Rosario, catalogada una rareza por su construcción, belleza e historia.</p>
+         <p align="justify"><strong>SÍNTESIS: </strong>Visitaremos uno de los lugares turísticos más cercanos y hermosos en San Salvador, por su historia y tradición: La Puerta del Diablo y Mil Cumbres en Planes de Renderos, donde tomaremos un delicioso almuerzo y podremos tener vistas panorámicas hacia el mar, la capital y el lago más grande del país: Ilopango, muy conocido por ser el cráter de un antiguo volcán cuya antigua mega­erupción marcó la historia de nuestros antepasados. Luego, nos  dirigiremos a conocer el centro Histórico de la capital, donde se vivieron  acontecimientos políticos muy importantes en nuestra historia y que incluye la Catedral Metropolitana que acoge los restos del Arzobispo Óscar Arnulfo Romero y  la Iglesia El Rosario, catalogada una rareza por su construcción, belleza e historia.</p>
         </div>
     </div>
     <div class="row">
     <div class="col-lg-8">
-    <p><strong>Lugar y hora de salida: </strong>Universidad Centroamericana “José Simeón Cañas” (UCA); 12.00 M.</p>
-    <p><strong>Hora de llegada: </strong>Entre 6.30 y 7:00 p.m, aproximadamente, tomando en cuenta el tráfico.</p>
-    <p><strong>Incluye: </strong>Botella con agua, transporte con aire acondicionado, entrada a los sitios a visitar,almuerzo completo y servicio de guía.</p>
-    <p><strong>Almuerzo: </strong>cada participante puede escoger una de las siguientes cinco opciones. Cada plato incluye una bebida: horchata, cebada o gaseosa. Cualquier otra bebida aparte deberá sercosteada por el participante.</p></div>
+    <p align="justify"><strong>Lugar y hora de salida: </strong>Universidad Centroamericana “José Simeón Cañas” (UCA); 12.00 M.</p>
+    <p align="justify"><strong>Hora de llegada: </strong>Entre 6.30 y 7:00 p.m, aproximadamente, tomando en cuenta el tráfico.</p>
+    <p align="justify"><strong>Incluye: </strong>Botella con agua, transporte con aire acondicionado, entrada a los sitios a visitar,almuerzo completo y servicio de guía.</p>
+    <p align="justify"><strong>Almuerzo: </strong>cada participante puede escoger una de las siguientes cinco opciones. Cada plato incluye una bebida: horchata, cebada o gaseosa. Cualquier otra bebida aparte deberá sercosteada por el participante.</p></div>
     <div class="col-lg-4">
       <img class="img-fluid rounded mb-4" src="media/img/lapidamonse.jpg" alt="">
     </div>
@@ -712,10 +710,11 @@
           <img class="img-fluid rounded mb-4" src="media/img/iglesiarosario.jpg" alt="">
         </div>
         <div class="col-lg-8">
-         <p><strong>ITINERARIO: </strong>Presentación e indicaciones generales por parte del guía. Nos dirigimos hacia Mil Cumbres, zona de montaña cerca de San Salvador para tomar el almuerzo con una vista y clima para disfrutar al máximo. Visitamos Planes de Renderos donde podremos detenernos unos 20 minutos para contemplar la hermosa vista desde el mirador desde donde contemplamos volcanes, la ciudad capital, el histórico lago de Ilopango. Además contaremos con 30 minutos para comprar artesanías si se desea o disfrutar del, el paisaje el clima. Posteriormente, descendemos hacia el Centro Histórico, donde está el KM 0 desde de todas las vías principales del país y donde visitaremos Catedral Metropolitana, Plaza Barrios, Palacio Nacional, recientemente remodelados. En catedral conoceremos uno de los sitios más visitados en el país: la Cripta, donde yacen los restos de Monseñor Oscar Romero. </p>
+         <p align="justify"><strong>ITINERARIO: </strong>Presentación e indicaciones generales por parte del guía. Nos dirigimos hacia Mil Cumbres, zona de montaña cerca de San Salvador para tomar el almuerzo con una vista y clima para disfrutar al máximo. Visitamos Planes de Renderos donde podremos detenernos unos 20 minutos para contemplar la hermosa vista desde el mirador desde donde contemplamos volcanes, la ciudad capital, el histórico lago de Ilopango. Además contaremos con 30 minutos para comprar artesanías si se desea o disfrutar del, el paisaje el clima. Posteriormente, descendemos hacia el Centro Histórico, donde está el KM 0 desde de todas las vías principales del país y donde visitaremos Catedral Metropolitana, Plaza Barrios, Palacio Nacional, recientemente remodelados. En catedral conoceremos uno de los sitios más visitados en el país: la Cripta, donde yacen los restos de Monseñor Oscar Romero. </p>
         </div>
     </div>
-    <p>Finalizaremos visitando, a pocos metros la Iglesia El Rosario, una rareza arquitectónica pormuchas razones y que a la vez, cuenta con una belleza e historia únicas.A eso de las 5.30 o 6 PM nos desplazamos hacia la UCA para llegar entre 6.30 y 7 PM dependiendo del tráfico.</p>
+    <p align="justify">Finalizaremos visitando, a pocos metros la Iglesia El Rosario, una rareza arquitectónica pormuchas razones y que a la vez, cuenta con una belleza e historia únicas.A eso de las 5.30 o 6 PM nos desplazamos hacia la UCA para llegar entre 6.30 y 7 PM dependiendo del tráfico.<br>
+     Para saber más de Gringo Day Tours, empresa de rutas y viajes turísticos en El Salvador, puede visitar la página: <a href="https://www.tripadvisor.es/Attraction_Review-g303859-d3660494-Reviews-GringoTours-Suchitoto_Cuscatlan_Department.html " target="_top">Gringo Day Tours</a></p>
   </div>
 </div>
 <div class="tab-pane fade" id="trip2">
@@ -725,29 +724,39 @@
       <li>Mercado Nacional de Artesania</li>
       <li>Parque "El Boquerón”</li>      
     </ul></small></h3>
-    <h3><small><strong>Costro por persona:</strong> $40.00</small></h3>
+    <h3><small><strong>Costro por persona:</strong> $45.00</small></h3>
     <br>
-    <p>Este tour le permitirá conocer todas las artesanías tradicionales de El Salvador y disfrutar de lasmejores vistas del país.</p>
+    <p align="justify">Este tour le permitirá conocer todas las artesanías tradicionales de El Salvador y disfrutar de lasmejores vistas del país.</p>
     <div class="row">
     <div class="col-lg-8">
     <br>
-    <p><strong>Lugar y hora de salida: </strong>Universidad Centroamericana “José Simeón Cañas” (UCA); 12.00 M.</p>
-    <p><strong>Hora de llegada: </strong>7:00 p.m, aproximadamente, tomando en cuenta el tráfico.</p>
-    <p><strong>Incluye: </strong>Botella con agua, transporte, entrada a los sitios a visitar, almuerzo completo y servicio de guía nacional..</p></div>
+    <p align="justify" align="justify"><strong>Lugar y hora de salida: </strong>Universidad Centroamericana “José Simeón Cañas” (UCA); 12.00 M.</p>
+    <p align="justify" align="justify"><strong>Hora de llegada: </strong>7:00 p.m, aproximadamente, tomando en cuenta el tráfico.</p>
+    <p align="justify"><strong>Incluye: </strong>Botella con agua, transporte, entrada a los sitios a visitar, almuerzo completo y servicio de guía nacional..</p></div>
     <div class="col-lg-4">
       <img class="img-fluid rounded mb-4" src="media/img/mercado.jpg" alt="">
     </div>
     </div>    
-    <p><strong>ITINERARIO: </strong>Para empezar este tour, una vez que todos los participantes aborden la unidad de transporte, recibirán una breve introducción por el guía turístico y explicación a detalle de la ruta arecorrer.</p>
+    <p align="justify"><strong>ITINERARIO: </strong>Para empezar este tour, una vez que todos los participantes aborden la unidad de transporte, recibirán una breve introducción por el guía turístico y explicación a detalle de la ruta arecorrer.</p>
     <div class="row">
         <div class="col-lg-4">
           <img class="img-fluid rounded mb-4" src="media/img/boqueron.jpg" alt="">
         </div>
         <div class="col-lg-8">
-         <p>La primera parada en El Mercado Nacional de Artesanía está a menos de 15 minutos(dependiendo del tráfico de la cuidad) de lasinstalaciones de la UCA. El Grupo tendrá de30 a 45 minutos para explorar las docenas depuestos del mercado para comprar recuerdos yartesanías que se elaborar en todo el país. Elguía del tour pueda ayudar si usted estábuscando una artesanía en especial o sinecesita ayuda con las negociaciones.</p><p>Al salir del mercado, comenzará el recorrido hacia el Parque “El Boquerón”, una zona muy bella del Volcán de San Salvador. Antes de llegar al parque, se hará una parada para disfrutar de un delicioso almuerzo con vistas panorámicas de la zona.</p>
+         <p align="justify">La primera parada en El Mercado Nacional de Artesanía está a menos de 15 minutos(dependiendo del tráfico de la cuidad) de lasinstalaciones de la UCA. El Grupo tendrá de30 a 45 minutos para explorar las docenas depuestos del mercado para comprar recuerdos yartesanías que se elaborar en todo el país. Elguía del tour pueda ayudar si usted estábuscando una artesanía en especial o sinecesita ayuda con las negociaciones.</p><p align="justify">Al salir del mercado, comenzará el recorrido hacia el Parque “El Boquerón”, una zona muy bella del Volcán de San Salvador. Antes de llegar al parque, se hará una parada para disfrutar de un delicioso almuerzo con vistas panorámicas de la zona.</p>
         </div>
     </div>
-    <p>De terminar el almuerzo, con postre y café incluidos, se continuará el camino hasta llegar al parque El Boquerón, con vistas espectaculares, mucha vegetación y un clima muy fresco y agradable. Será un recorrido breve, pero lo justo para llegar hasta el punto más alto y observar el “boquerón”, la gran boca de cráter. Habrá tiempo para descansar, deleitarse con el paisaje, ver el pequeño museo y tomar fotos del mirador con vistas de San Salvador. De tener tiempo suficiente, el grupo podrá hacer una parada en otro de los miradores privados y apreciar la puesta de sol y la vista de la ciudad al oscurecer.</p>
+    <p align="justify">De terminar el almuerzo, con postre y café incluidos, se continuará el camino hasta llegar al parque El Boquerón, con vistas espectaculares, mucha vegetación y un clima muy fresco y agradable. Será un recorrido breve, pero lo justo para llegar hasta el punto más alto y observar el “boquerón”, la gran boca de cráter. Habrá tiempo para descansar, deleitarse con el paisaje, ver el pequeño museo y tomar fotos del mirador con vistas de San Salvador. De tener tiempo suficiente, el grupo podrá hacer una parada en otro de los miradores privados y apreciar la puesta de sol y la vista de la ciudad al oscurecer.</p>
+    <h2><strong>Opciones de menú</strong></h2><br>
+    <h3>Restaurante “Café Miranda” ofrece:</h3>
+    <p align="justify">
+      <ul>
+        <li><strong>Lomo de cerdo,</strong> acompañado de delicioso arroz, elote, chimichurri, chirmol y 2 panes de bollo. La bebida queda a elección: soda, botella con agua o refresco de fruta natural.</li>
+        <li><strong>Pechuga de pollo a la plancha, </strong> acompañado de delicioso arroz, elote, chimichurri, chirmol y 2 panes de bollo. La bebida queda a elección: soda, botella con agua o refresco de fruta natural.</li>
+        <li><strong>Tilapia (pescado) a la plancha o empanizada,</strong>acompañado de delicioso arroz, elote, chimichurri, chirmol y 2 panes de bollo. La bebida queda a elección: soda, botella con agua o refresco de fruta natural.</li>
+      </ul>
+       Para saber más de Gringo Day Tours, empresa de rutas y viajes turísticos en El Salvador, puede visitar la página: <a href="https://www.tripadvisor.es/Attraction_Review-g303859-d3660494-Reviews-GringoTours-Suchitoto_Cuscatlan_Department.html " target="_top">Gringo Day Tours</a>
+    </p>
   </div>
 </div>
 <div class="tab-pane fade" id="trip3">
@@ -757,28 +766,38 @@
       <li>Lago de Coatepeque</li>
       <li>Joya de Cerén</li>      
     </ul></small></h3>
-    <h3><small><strong>Costro por persona:</strong> $40.00</small></h3>
+    <h3><small><strong>Costro por persona:</strong> $45.00</small></h3>
     <br>
-    <p>Este tour le permitirá conocer todas las artesanías tradicionales de El Salvador y disfrutar de lasmejores vistas del país.</p>
+    <p align="justify">Este tour le permitirá conocer todas las artesanías tradicionales de El Salvador y disfrutar de lasmejores vistas del país.</p>
     <div class="row">
     <div class="col-lg-8"><br><br>
-    <p><strong>Lugar y hora de salida: </strong>Universidad Centroamericana “José Simeón Cañas” (UCA); 12.00 M.</p>
-    <p><strong>Hora de llegada: </strong>7:00 p.m, aproximadamente, tomando en cuenta el tráfico.</p>
-    <p><strong>Incluye: </strong>Botella con agua, transporte, entrada a los sitios a visitar, almuerzo completo y servicio de guía nacional..</p></div>
+    <p align="justify"><strong>Lugar y hora de salida: </strong>Universidad Centroamericana “José Simeón Cañas” (UCA); 12.00 M.</p>
+    <p align="justify"><strong>Hora de llegada: </strong>7:00 p.m, aproximadamente, tomando en cuenta el tráfico.</p>
+    <p align="justify"><strong>Incluye: </strong>Botella con agua, transporte, entrada a los sitios a visitar, almuerzo completo y servicio de guía nacional..</p></div>
     <div class="col-lg-4">
       <img class="img-fluid rounded mb-4" src="media/img/joya.jpg" alt="">
     </div>
     </div>    
-    <p>Esta opción de tour ofrece un recorridohacia una de las maravillas de El Salvador:El Lago de Coatepeque, ubicado a unahora de la ciudad, aproximadamente.</p>
+    <p align="justify">Esta opción de tour ofrece un recorridohacia una de las maravillas de El Salvador:El Lago de Coatepeque, ubicado a unahora de la ciudad, aproximadamente.</p>
     <div class="row">
         <div class="col-lg-4">
           <img class="img-fluid rounded mb-4" src="media/img/lago.jpg" alt="">
         </div>
         <div class="col-lg-8">
-         <p><strong>ITINERARIO: </strong>La primeria parada será para disfrutar un rico almuerzo con vista al impresionante lago. La caldera se formó como resultado de una gran erupción volcánica, por lo que, además, se formaron flujos de lava y conos de escoria. El lago de Coatepeque, que su topónimo significa “Cerro de las culebras”,cuenta con una isla llamada Teopán</p><p>Al terminar el almuerzo, que incluye postre y café, el recorrido continuará hacia el sitio arqueológico de origen Maya “Joya de Cerén”, el único catalogado como Patrimonio Mundial de la UNESCO en El Salvador, y única de su tipo en Meso América. Acá tomaremos un recorrido por el sitio acompañando el guía asignado al tour y otros guías del sitio arqueológico. Este lugar nos abre una ventana al pasado, mostrando cuáles eran las formas de vida de la civilización Maya.</p>
+         <p align="justify"><strong>ITINERARIO: </strong>La primeria parada será para disfrutar un rico almuerzo con vista al impresionante lago. La caldera se formó como resultado de una gran erupción volcánica, por lo que, además, se formaron flujos de lava y conos de escoria. El lago de Coatepeque, que su topónimo significa “Cerro de las culebras”,cuenta con una isla llamada Teopán</p><p align="justify">Al terminar el almuerzo, que incluye postre y café, el recorrido continuará hacia el sitio arqueológico de origen Maya “Joya de Cerén”, el único catalogado como Patrimonio Mundial de la UNESCO en El Salvador, y única de su tipo en Meso América. Acá tomaremos un recorrido por el sitio acompañando el guía asignado al tour y otros guías del sitio arqueológico. Este lugar nos abre una ventana al pasado, mostrando cuáles eran las formas de vida de la civilización Maya.</p>
         </div>
     </div>
-    <p>Actualmente el pequeño museo del sitio está bajo reparaciones y no hay forma de saber si estará habilitada antes de nuestro recorrido. Aún sin el museo, Joya de Cerén es uno de los sitios de interés más visitados de El Salvador.</p>
+    <p align="justify">Actualmente el pequeño museo del sitio está bajo reparaciones y no hay forma de saber si estará habilitada antes de nuestro recorrido. Aún sin el museo, Joya de Cerén es uno de los sitios de interés más visitados de El Salvador.</p>
+    <h2><strong>Opciones de menú</strong></h2><br>
+    <h3>Restaurante “El Faro del Lago” ofrece:</h3>
+    <p align="justify">
+      <ul>
+        <li><strong>Churrasco (carne), </strong>acompañado de ensalada fresca, arroz, vegetales salteados, chirmol y 2 tortillas. La bebida queda a elección: botella con agua, limonada o refresco de jamaica.</li>
+        <li><strong>Pollo asado con salsa de hongos, </strong>acompañado de ensalada fresca, arroz, vegetales salteados, chirmol y 2 tortillas. La bebida queda a elección: botella con agua, limonada o refresco de jamaica.</li>
+        <li><strong>Filete de pescado a la pancha o empanizado, </strong>acompañado de ensalada fresca, arroz, vegetales salteados, chirmol y 2 tortillas. La bebida queda a elección: botella con agua, limonada o refresco de jamaica.</li>
+      </ul>
+      Para saber más de Gringo Day Tours, empresa de rutas y viajes turísticos en El Salvador, puede visitar la página: <a href="https://www.tripadvisor.es/Attraction_Review-g303859-d3660494-Reviews-GringoTours-Suchitoto_Cuscatlan_Department.html " target="_top">Gringo Day Tours</a>
+    </p>
   </div>
 </div>
 
@@ -841,12 +860,13 @@
 </div>
  </div>
       <!-- /.container -->
- <footer class="py-5 bg-dark">
+  <footer class="py-4 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">&copy; Uca 2018
-          <a href="#" ><i class="fa fa-twitter"></i></a>
-          <a href="#" ><i class="fa fa-facebook"></i></a>
-          <a href="#" ><i class="fa fa-youtube"></i></a>
+        <p class="m-0 text-center text-white">Seminario Regional de Migraciones.</p>
+        <p class="m-0 text-center text-white">Del 10 al 13 de Abril, UCA EL Salvador</p>
+        <p class="m-0 text-center text-white">&copy; UCA 2018
+          <a href="https://twitter.com/semigraciones" ><i class="fa fa-twitter"></i></a>
+          <a href="https://www.facebook.com/seminarioregionaldemigraciones/" ><i class="fa fa-facebook"></i></a>
         </p>
       </div>
       <!-- /.container -->

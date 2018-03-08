@@ -16,7 +16,7 @@
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!--<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script type="text/javascript">
    (function(){
       emailjs.init("user_iM2t2CIyihiXd7losXBxM");
@@ -29,9 +29,19 @@
   var phone=document.getElementById("phone").value;
   var message=document.getElementById("message").value;
 
-  emailjs.send('gmail', 'seminariomigracion', {'reply_to': email,'from_name':name,'to_name':'','message_html':message+'<br>'+ 'Numero de contacto: '+phone });
+  emailjs.send('gmail', 'seminariomigracion', {'reply_to': email,'from_name':name,'to_name':'','message_html':message+'<br>'+ 'Numero de contacto: '+phone });  
  };
-</script>
+</script>-->
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114894241-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-114894241-1');
+    </script>
   </head>
 
   <body>
@@ -39,12 +49,16 @@
      <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="media/img/LogoSeminario_flechas.png" width="250" height="80" alt=""></a>
+        <a class="collapse navbar-collapse" href="index.html"><img src="media/img/LogoSeminario_flechas.png" width="350" alt=""></a>
+        <a class="navbar-toggler" href="index.html"><img src="media/img/LogoSeminario_flechas.png" width="225" alt=""></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">            
+          <ul class="navbar-nav ml-auto">     
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" >Inicio</a>
+            </li>        
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Información
@@ -52,47 +66,32 @@
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
                 <a class="dropdown-item" href="Objetivos.html">Objetivos y carácter</a>
                 <a class="dropdown-item" href="ejes.html">Ejes y/o temáticas</a>
-                <a class="dropdown-item" href="programacion.html">Programación</a> 
-                <a class="dropdown-item disabled" href="ponentes.html">Expositores</a>   
+                <a class="dropdown-item" href="programacion.html">Programa</a> 
+                <a class="dropdown-item " href="expositores.html">Ponentes centrales</a>   
                 <a class="dropdown-item" href="informacion.html">Información general</a>
                 <a class="dropdown-item" href="faq.html">Preguntas frecuentes</a>           
               </div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Inscríbete
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="participante.html">Participante</a>
-                <a class="dropdown-item" href="ponente.html">Expositor</a>                
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="inscripcion.html" >Inscripción</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Galería
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="index.html">Fotos</a>
-                <a class="dropdown-item" href="index.html">Vídeos</a>
-                <a class="dropdown-item" href="index.html">Documentos</a>
-              </div>
-            </li>  
+            <li class="nav-item">
+              <a class="nav-link " href="galeria.html" >Galería</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="contacto.html">Contáctanos</a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </nav>   
 
     <!-- Page Content -->
     <!-- Contact Form -->
       <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
     <br><br><br>      
     <div class="container">
-       <h1 class="mt-4 mb-3">Información
-        <small>de contacto</small>
-      </h1>      
+       <h1 class="mt-4 mb-3">Información de contacto </h1>      
       <div class="row" >
         <div class="col-lg-6 alert alert-dismissible alert-light">          
           <table class="table-light">
@@ -101,12 +100,12 @@
               <tr>
                 <th scope="row"><img src="media/icons/map.png" align="left"></th>
                 <td>&#8195 &#8195</td>
-                <td>Bulevar Los Próceres, Antiguo Cuscatlán, La Libertad, El Salvador, Centroamerica</td>
+                <td>Bulevar Los Próceres, Antiguo Cuscatlán, La Libertad, El Salvador, Centroamérica</td>
               </tr>
               <tr>
                 <th scope="row"><img src="media/icons/phone.png" align="left"></th>
                 <td>&#8195 &#8195</td>
-                <td>(503) 2210-6600 Extensión 631</td>
+                <td>(503) 2210-6600 Extensión 455</td>
               </tr>
               <tr>
                 <th scope="row"><img src="media/icons/mail.png" align="left"></th>
@@ -125,35 +124,40 @@
           <img src="media/icons/mail.png" align="left">
           <h5 class="alert-light">&#8195 Enviar correo</h5><br>
           
-          <form name="sentMessage" id="contactForm" novalidate method="POST">
+          <form name="sentMessage" id="contactForm" action= "validar.php" method="POST">
             <div class="control-group form-group">
               <div class="controls">
                 
-                <input type="text" class="form-control is-invalid inval" id="name" required data-validation-required-message="Este campo es obligatorio" placeholder="Nombre Completo">
+                <input type="text" class="form-control is-invalid inval" name= "name" id="name" required data-validation-required-message="Este campo es obligatorio" placeholder="Nombre Completo">
                 <p class="invalid-feedback"></p>
               </div>
             </div>
             <div class="control-group form-group">
               <div class="controls">
                 
-                <input type="tel" class="form-control is-invalid inval" id="phone" required data-validation-required-message="Este campo es obligatorio" placeholder="Telefono">
+                <input type="tel" class="form-control is-invalid inval" name="phone" id="phone" required data-validation-required-message="Este campo es obligatorio" placeholder="Teléfono">
               </div>
             </div>
             <div class="control-group form-group">
               <div class="controls">
                 
-                <input type="email" class="form-control is-invalid inval" id="email" required data-validation-required-message="Este campo es obligatorio" placeholder="Correo electronico">
+                <input type="email" class="form-control is-invalid inval" name= "email" id="email" required data-validation-required-message="Este campo es obligatorio" placeholder="Correo electrónico">
               </div>
             </div>
             <div class="control-group form-group">
               <div class="controls">
               
-                <textarea rows="10" cols="100" class="form-control is-invalid inval" id="message" required data-validation-required-message="Este campo es obligatorio" maxlength="999" style="resize:none" placeholder="Mensaje"></textarea>
+                <textarea rows="10" cols="100" class="form-control is-invalid inval" name="message" id="message" required data-validation-required-message="Este campo es obligatorio" maxlength="999" style="resize:none" placeholder="Mensaje"></textarea>
+              </div>
+            </div>            
+            <div class="control-group form-group">
+              <div class="controls">
+                <div class="g-recaptcha" data-sitekey="6LeDbEkUAAAAAK8pGPjXOnVN70f33SSLhHleDfXE"></div>
               </div>
             </div>
             <div id="success"></div>
             <!-- For success/fail messages -->
-            <button type="submit" class="btn btn-outline-danger" id="sendMessageButton"  onclick="envioCorreo()">Enviar</button>
+            <button type="submit" class="btn btn-outline-danger" id="sendMessageButton">Enviar</button>
           </form>
         </div>
 
@@ -176,25 +180,24 @@
     <!-- /.container -->
 
    <!-- Footer -->
-    <footer class="py-5 bg-dark">
+   <footer class="py-4 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">&copy; Uca 2018
-          <a href="#" ><i class="fa fa-twitter"></i></a>
-          <a href="#" ><i class="fa fa-facebook"></i></a>
-          <a href="#" ><i class="fa fa-youtube"></i></a>
+        <p class="m-0 text-center text-white">Seminario Regional de Migraciones.</p>
+        <p class="m-0 text-center text-white">Del 10 al 13 de Abril, UCA EL Salvador</p>
+        <p class="m-0 text-center text-white">&copy; UCA 2018
+          <a href="https://twitter.com/semigraciones" ><i class="fa fa-twitter"></i></a>
+          <a href="https://www.facebook.com/seminarioregionaldemigraciones/" ><i class="fa fa-facebook"></i></a>
         </p>
       </div>
       <!-- /.container -->
     </footer>
-
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Contact form JavaScript -->
     <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+ 
 
   </body>
 
